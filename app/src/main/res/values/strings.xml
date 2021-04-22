@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RaxorShop - FreeAPI</string>
+    <string name="tab_text_1">Produits</string>
+    <string name="tab_text_2">Clients</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment"></string>
+    <string name="aucune_donn_e">Aucune donnée</string>
+</resources>
