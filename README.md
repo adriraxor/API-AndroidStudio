@@ -8,7 +8,7 @@ L'API comporte des appels de fonction pour permettre la récupération de plusie
 - Les produits qui vont prochainement sortir ✅
 - La liste de tous les produits existants ✅
 ❗️ D'autres fonctions pourrons être retournés prochainement ❗️
-🔨Dans la prochaine mise à jour il sera possible de récupérer quelques informations :🔨
+#🔨Dans la prochaine mise à jour il sera possible de récupérer quelques informations :🔨
 - Le nombre de produit existant
 - Le montant total de tous les produits cumulés
 - Le nombre de clients inscrit
