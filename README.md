@@ -9,7 +9,7 @@ Ce repository comporte le code source d'une petite API lié au site web Symfony 
 - Les produits qui vont prochainement sortir ✅
 - La liste de tous les produits existants ✅
 
-## ❗️ D'autres fonctions pourrons être retournés prochainement ❗️ 
+## ❗️ D'autres fonctions pourrons être retournées prochainement ❗️ 
 **🔨Dans la prochaine mise à jour il sera possible de récupérer quelques informations :🔨**
 
  - Le nombre de produit existant ⌛️
