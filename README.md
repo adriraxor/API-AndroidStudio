@@ -1,7 +1,7 @@
 # API-AndroidStudio
 Ce repository comporte le code source d'une petite API lié au site web Symfony (https://github.com/adriraxor/symfony5_web)
 
-# Contenue de l'API
+# Contenu de l'API
 
 **L'API comporte des appels de fonction pour permettre la récupération de plusieurs informations tels que :**
 - Les produits en tendances sur le site ✅
