@@ -17,4 +17,4 @@ Ce repository comporte le code source d'une petite API lié au site web Symfony 
 - Le nombre de clients inscrit ⌛️
 - Le nombre de clients ayant effectués au moins une commande ⌛️
 - Le nombre de clients n'ayant effectués aucune commandes ⌛️
-- Lors d'une authentification sécurisé en tant qu'Administrateur de pouvoir apporter des modifications à un produit ⌛️
+- Lors d'une authentification sécurisée en tant qu'Administrateur de pouvoir apporter des modifications à un produit ⌛️
