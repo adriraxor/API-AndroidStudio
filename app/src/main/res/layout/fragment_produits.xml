@@ -11,74 +11,59 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:background="#3a274e"
         android:layout_height="match_parent"
+        android:background="#3a274e"
         android:text="@string/hello_blank_fragment"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="-71dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <Button
         android:id="@+id/btn_getAllProducts"
         android:layout_width="226dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/custom_button"
         android:backgroundTint="#3D4470"
         android:text="/GET AllProducts"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintBottom_toTopOf="@+id/btn_getNbProducts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.099" />
-
-    <TextView
-        android:id="@+id/tv_AllProducts"
-        android:layout_width="111dp"
-        android:layout_height="54dp"
-        android:text="Retourne tous les produits"
-        android:textColor="@color/white"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.913"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btn_getTendance"
         android:layout_width="226dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/custom_button"
         android:backgroundTint="#3D4470"
         android:text="/GET Tendance"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_getMontantStock"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.086"
-        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.198" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btn_getRecent"
         android:layout_width="226dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/custom_button"
         android:backgroundTint="#3D4470"
         android:text="/GET Recent"
-        android:textColor="#FFFFFF"
 
+        android:textColor="#FFFFFF"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_getTendance"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.086"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.295" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_getComingSoon"
@@ -91,111 +76,43 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.086"
-        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.392" />
+        app:layout_constraintVertical_bias="0.791" />
 
     <Button
         android:id="@+id/btn_getNbProducts"
         android:layout_width="226dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/custom_button"
         android:backgroundTint="#3D4470"
         android:text="/GET NbProducts"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_getRecent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.086"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btn_getMontantStock"
         android:layout_width="226dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/custom_button"
         android:backgroundTint="#3D4470"
         android:text="/GET MontantStock"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_getComingSoon"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.086"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.601" />
-
-    <TextView
-        android:id="@+id/tv_tendance"
-        android:layout_width="111dp"
-        android:layout_height="54dp"
-        android:text="Retourne les produits tendance"
-        android:textColor="@color/white"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193" />
-
-    <TextView
-        android:id="@+id/tv_recent"
-        android:layout_width="111dp"
-        android:layout_height="54dp"
-        android:text="Retourne les produits récents [Décroissant]"
-        android:textColor="@color/white"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.913"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.296" />
-
-    <TextView
-        android:id="@+id/tv_comingSoon"
-        android:layout_width="111dp"
-        android:layout_height="54dp"
-        android:text="Retourne les prochaines sorties"
-        android:textColor="@color/white"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.913"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.391" />
-
-    <TextView
-        android:id="@+id/tv_comingSoon2"
-        android:layout_width="111dp"
-        android:layout_height="54dp"
-        android:text="Retourne le nombre produits total"
-        android:textColor="@color/white"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.913"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.494" />
-
-    <TextView
-        android:id="@+id/tv_comingSoon3"
-        android:layout_width="111dp"
-        android:layout_height="54dp"
-        android:text="Retourne le montant total du stock"
-        android:textColor="@color/white"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.913"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

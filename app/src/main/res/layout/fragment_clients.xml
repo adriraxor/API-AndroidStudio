@@ -10,67 +10,41 @@
 
     <Button
         android:id="@+id/btn_getAllClients"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_width="248dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="36dp"
         android:text="/GET allClients"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_getNbClients"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.081" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btn_getNbClients"
-        android:layout_width="163dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="68dp"
+        android:layout_width="248dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="36dp"
         android:text="/GET NbClients"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_getNbClientsCommande"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.206" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btn_getNbClientsCommande"
-        android:layout_width="304dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="68dp"
+        android:layout_width="248dp"
+        android:layout_height="68dp"
         android:text="/GET NbClientsCommandes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.311" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="187dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="120dp"
-        android:text="Retourne tous les clients (Sauf informations sensibles)"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.755"
-        app:layout_constraintStart_toEndOf="@+id/btn_getAllClients"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="188dp"
-        android:layout_height="37dp"
-        android:text="Retourne le nombre de clients inscrits"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.772"
-        app:layout_constraintStart_toEndOf="@+id/btn_getNbClients"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.295" />
+        app:layout_constraintVertical_bias="0.567" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
