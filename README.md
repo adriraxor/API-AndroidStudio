@@ -16,4 +16,3 @@ Ce repository comporte le code source d'une petite API lié au site web Symfony 
 ## ❗️ D'autres fonctions pourrons être retournées prochainement ❗️ 
 **🔨Dans la prochaine mise à jour il sera possible de récupérer quelques informations :🔨**
 - Le nombre de clients n'ayant effectués aucune commandes ⌛️
-- Lors d'une authentification sécurisée en tant qu'Administrateur de pouvoir apporter des modifications à un produit ⌛️
