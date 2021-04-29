@@ -3,7 +3,7 @@ Ce repository comporte le code source d'une petite API lié au site web Symfony 
 
 # Contenu de l'API
 
-**L'API comporte des appels de fonction pour permettre la récupération de plusieurs informations telles que :**
+**L'API comporte des appels de fonction pour permettre la récupération de plusieurs informations en temps réel synchronisé avec le site WEB telles que :**
 - Les produits en tendances sur le site ✅
 - Les produits récemments ajoutés ✅
 - Les produits qui vont prochainement sortir ✅
