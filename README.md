@@ -13,6 +13,6 @@ Ce repository comporte le code source d'une petite API lié au site web Symfony 
 - Le nombre de clients inscrits ✅
 - Le nombre de clients ayant effectué au moins une commande ✅
 
-## ❗️ D'autres fonctions pourrons être retournées prochainement ❗️ 
+## ❗️ D'autres fonctions pourront être retournées prochainement ❗️ 
 **🔨Dans la prochaine mise à jour il sera possible de récupérer quelques informations :🔨**
 - Le nombre de clients n'ayant effectués aucune commandes ⌛️
