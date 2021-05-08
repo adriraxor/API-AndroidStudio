@@ -1,7 +1,7 @@
 # API-AndroidStudio
 Ce repository comporte le code source d'une petite API lié au site web Symfony (https://github.com/adriraxor/symfony5_web)
 
-L'APK téléchargeable sera bientôt disponible dans la branche "Main", de même pour la documentation. 
+**Voir la documentation détaillé : https://github.com/adriraxor/API-AndroidStudio/blob/main/Documentation/PPE4%20-%20Documentation.pdf**
 
 # Contenu de l'API
 
