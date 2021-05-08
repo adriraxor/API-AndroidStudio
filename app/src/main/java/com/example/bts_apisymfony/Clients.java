@@ -39,6 +39,8 @@ import java.util.ArrayList;
  */
 public class Clients extends Fragment {
 
+
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -92,7 +94,8 @@ public class Clients extends Fragment {
             @SuppressLint("ShowToast")
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(), "http://192.168.187.136:8082/bts-app/public/ApiAllProducts", Toast.LENGTH_SHORT).show();
+                VariablesGlobales vc = new VariablesGlobales();
+                Toast.makeText(v.getContext(), vc.IPServeur, Toast.LENGTH_SHORT).show();
                 Intent intentActivityAllClients = new Intent(v.getContext(), GetAllClients_Activity.class);
                 startActivity(intentActivityAllClients);
             }
@@ -103,9 +106,10 @@ public class Clients extends Fragment {
             public void onClick(View v) {
                 //le contexte est l'instance (this) de l'activity APIActivity
                 RequestQueue queue = Volley.newRequestQueue(v.getContext());
+                VariablesGlobales vc = new VariablesGlobales();
 
                 //url du service à consommer
-                String url = "http://192.168.187.138:8082/bts-app/public/ApiNbClientsCommandes";
+                String url = vc.IPServeur + vc.API_FetchApiNbClientsCommandes;
 
                 StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                         new Response.Listener<String>() {
@@ -154,9 +158,10 @@ public class Clients extends Fragment {
             public void onClick(View v) {
                 //le contexte est l'instance (this) de l'activity APIActivity
                 RequestQueue queue = Volley.newRequestQueue(v.getContext());
+                VariablesGlobales vc = new VariablesGlobales();
 
                 //url du service à consommer
-                String url = "http://192.168.187.138:8082/bts-app/public/ApiNbClientsInscrits";
+                String url = vc.IPServeur + vc.API_ApiNbClientsInscrits;
 
                 StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                         new Response.Listener<String>() {

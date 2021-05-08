@@ -2,6 +2,7 @@ package com.example.bts_apisymfony;
 
 import android.app.ListActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.SimpleAdapter;
 
 import com.android.volley.Request;
@@ -20,6 +21,7 @@ import java.util.HashMap;
 
 public class GetAllRecentProducts_Activity extends ListActivity {
 
+    VariablesGlobales v = new VariablesGlobales();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +39,8 @@ public class GetAllRecentProducts_Activity extends ListActivity {
         RequestQueue queue = Volley.newRequestQueue(GetAllRecentProducts_Activity.this);
 
         //url du service à consommer
-        String url = "http://192.168.187.138:8082/bts-app/public/ApiAllRecentProducts";
+        String url = v.IPServeur + v.API_FetchApiAllRecentProducts;
+        Log.d("RecentPRD", url);
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
@@ -45,6 +48,7 @@ public class GetAllRecentProducts_Activity extends ListActivity {
                     public void onResponse(String response) {
                         //parcours des Clients retournés
                         //ArrayList<String> lesClients = new ArrayList<String>();
+                        Log.d("RecentPRDx2", url);
                         ArrayList <HashMap <String, String >> listAllProducts = new ArrayList<HashMap<String, String>>();
 
                         SimpleAdapter adapter = new SimpleAdapter(GetAllRecentProducts_Activity.this, listAllProducts, R.layout.custom_row_view_products, new String[] {"nom", "libelle", "tarifProduit", "stock", "nom_categorie", "date_apparition", "image"}, new int[] {R.id.text1, R.id.text2, R.id.text3, R.id.text4, R.id.text5, R.id.text6, R.id.text7});

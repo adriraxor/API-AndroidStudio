@@ -20,6 +20,7 @@ import java.util.HashMap;
 
 public class GetAllProducts_Activity extends ListActivity {
 
+    VariablesGlobales v = new VariablesGlobales();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,7 @@ public class GetAllProducts_Activity extends ListActivity {
         RequestQueue queue = Volley.newRequestQueue(GetAllProducts_Activity.this);
 
         //url du service à consommer
-        String url = "http://192.168.187.138:8082/bts-app/public/ApiAllProducts";
+        String url = v.IPServeur + v.API_FetchApiAllProducts;
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {

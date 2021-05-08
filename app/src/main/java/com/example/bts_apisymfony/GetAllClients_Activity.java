@@ -20,6 +20,7 @@ import java.util.HashMap;
 
 public class GetAllClients_Activity extends ListActivity {
 
+    VariablesGlobales v = new VariablesGlobales();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +36,7 @@ public class GetAllClients_Activity extends ListActivity {
         RequestQueue queue = Volley.newRequestQueue(GetAllClients_Activity.this);
 
         //url du service à consommer
-        String url = "http://192.168.187.138:8082/bts-app/public/ApiAllClients";
+        String url = v.IPServeur + v.API_FetchAllClients;
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {

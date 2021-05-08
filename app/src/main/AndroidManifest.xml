@@ -4,8 +4,9 @@
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
-
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -16,20 +17,25 @@
         android:theme="@style/Theme.BTSApiSymfony"
         android:usesCleartextTraffic="true">
 
-        <activity android:name=".GetAllClients_Activity" />
-        <activity android:name=".GetAllProducts_Activity" />
-        <activity android:name=".GetAllTendance_Activity" />
-        <activity android:name=".GetAllRecentProducts_Activity" />
-        <activity android:name=".GetAllComingSoonProducts_Activity" />
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.BTSApiSymfony.NoActionBar">
+            android:name=".LoginForm_Activity"
+            android:label="@string/title_activity_login_form_">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".GetAllClients_Activity" />
+        <activity android:name=".GetAllProducts_Activity" />
+        <activity android:name=".GetAllTendance_Activity" />
+        <activity android:name=".GetAllRecentProducts_Activity" />
+        <activity android:name=".GetAllComingSoonProducts_Activity" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.BTSApiSymfony.NoActionBar">
         </activity>
     </application>
 

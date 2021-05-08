@@ -41,6 +41,7 @@ import java.util.ArrayList;
  */
 public class Produits extends Fragment {
 
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -95,7 +96,8 @@ public class Produits extends Fragment {
         btn_allProducts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast allPrd = Toast.makeText(v.getContext(), "http://192.168.187.138:8082/bts-app/public/ApiAllProducts", Toast.LENGTH_SHORT);
+                VariablesGlobales vp = new VariablesGlobales();
+                Toast allPrd = Toast.makeText(v.getContext(), "Fetch from =>" + vp.IPServeur, Toast.LENGTH_SHORT);
                 allPrd.show();
                 Intent intentActivityAllProducts = new Intent(v.getContext(), GetAllProducts_Activity.class);
                 startActivity(intentActivityAllProducts);
@@ -105,7 +107,8 @@ public class Produits extends Fragment {
         btn_allTendanceProducts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast tendancePrd = Toast.makeText(v.getContext(), "http://192.168.187.138:8082/bts-app/public/ApiAllTendanceProducts", Toast.LENGTH_SHORT);
+                VariablesGlobales vp = new VariablesGlobales();
+                Toast tendancePrd = Toast.makeText(v.getContext(), "Fetch from =>" + vp.IPServeur, Toast.LENGTH_SHORT);
                 tendancePrd.show();
                 Intent intentActivityAllTendanceProducts = new Intent(v.getContext(), GetAllTendance_Activity.class);
                 startActivity(intentActivityAllTendanceProducts);
@@ -115,7 +118,8 @@ public class Produits extends Fragment {
         btn_allRecentProducts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast recentPrd = Toast.makeText(v.getContext(), "http://192.168.187.138:8082/bts-app/public/ApiAllRecentProducts", Toast.LENGTH_SHORT);
+                VariablesGlobales vp = new VariablesGlobales();
+                Toast recentPrd = Toast.makeText(v.getContext(), "Fetch from =>"+ vp.IPServeur, Toast.LENGTH_SHORT);
                 recentPrd.show();
                 Intent intentActivityAllRecentProducts = new Intent(v.getContext(), GetAllRecentProducts_Activity.class);
                 startActivity(intentActivityAllRecentProducts);
@@ -125,7 +129,8 @@ public class Produits extends Fragment {
         btn_allComingSoon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast comingSoonPrd = Toast.makeText(v.getContext(), "http://192.168.187.138:8082/bts-app/public/ApiAllCommingSoonProducts", Toast.LENGTH_SHORT);
+                VariablesGlobales vp = new VariablesGlobales();
+                Toast comingSoonPrd = Toast.makeText(v.getContext(), "Fetch from =>" + vp.IPServeur, Toast.LENGTH_SHORT);
                 comingSoonPrd.show();
                 Intent intentActivityAllComingSoon = new Intent(v.getContext(), GetAllComingSoonProducts_Activity.class);
                 startActivity(intentActivityAllComingSoon);
@@ -137,9 +142,10 @@ public class Produits extends Fragment {
             public void onClick(View v) {
                 //le contexte est l'instance (this) de l'activity APIActivity
                 RequestQueue queue = Volley.newRequestQueue(v.getContext());
+                VariablesGlobales vp = new VariablesGlobales();
 
                 //url du service à consommer
-                String url = "http://192.168.187.138:8082/bts-app/public/ApiCountTotalProducts";
+                String url = vp.IPServeur + vp.API_FetchApiCountTotalProducts;
 
                 StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                         new Response.Listener<String>() {
@@ -187,9 +193,10 @@ public class Produits extends Fragment {
             public void onClick(View v) {
                 //le contexte est l'instance (this) de l'activity APIActivity
                 RequestQueue queue = Volley.newRequestQueue(v.getContext());
+                VariablesGlobales vp = new VariablesGlobales();
 
                 //url du service à consommer
-                String url = "http://192.168.187.138:8082/bts-app/public/ApiValueStockProducts";
+                String url = vp.IPServeur + vp.API_FetchApiValueStockProducts;
                 StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                         new Response.Listener<String>() {
                             @Override
