@@ -1,5 +1,5 @@
 # API-AndroidStudio
-Ce repository comporte le code source d'une petite API lié au site web Symfony (https://github.com/adriraxor/symfony5_web)
+Ce repository comporte le code source d'une application Android qui vient consommé l'API du site web Symfony (https://github.com/adriraxor/symfony5_web)
 
 **Voir la documentation détaillé : https://github.com/adriraxor/API-AndroidStudio/blob/main/Documentation/PPE4%20-%20Documentation.pdf**
 
